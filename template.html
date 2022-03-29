@@ -3,48 +3,59 @@
 
   <head>
     <style>
-      body {
-        margin: 0;
-        width: 750px;
-        height: 200px
+      h1 {
+        font-family: sans-serif;
       }
 
       div {
-        width: 350px;
-        height: 200px;
         display: inline-block;
-        margin-top: 0;
-        margin-left: 0;
+        vertical-align: middle;
+      }
+      
+      .frontbox {
+        background-color: #cccccc;
+        width: 192px;
+        height: 118px;
+        margin-top: 6px;
+        margin-left: 6px;
       }
 
-      .box {
-        width: 100px;
-        height: 100px;
-        background-color: black;
-        margin: 50px;
+      .middlerow {
+        width: 142.5px;
+        height: 100px
       }
 
-      .left {
-        margin-right: 25px;
+      .middleshort {
+        height: 75px;
+        vertical-align: top;
       }
 
-      .right {
-        margin-left: 25px;
+      .bottombox {
+        width: 48.5%
       }
 
-      .red {
-        background-color: red;
+      .bottomshort {
+        height: 35px;
+        vertical-align: bottom;
       }
 
-      .blue {
-        background-color: blue;
-        }
+      .backbox {
+        display: block;
+        background-color: #555555;
+        width: 600px;
+        height: 130px;
+        margin: 10px;
+      }
+
+
     </style>
   </head>
 
   <body>
-    <div class="red"><div class="box left"></div><div class="box right"></div></div><div class="blue"><!--
-    --><div class="box left"></div><div class="box right"></div></div>
+    <h1>AAAAAHHHHHH</h1>
+    <div class="backbox"><div class="frontbox"></div><div class="frontbox"></div><div class="frontbox"></div></div>
+    <div class="backbox"><div class="middlerow frontbox"></div><div class="middlerow middleshort frontbox"></div><div class="middlerow frontbox"></div><div class="middlerow middleshort frontbox"></div></div>
+    <div class="backbox"><div class="frontbox bottombox bottomshort"></div><div class="frontbox bottombox"></div></div>
   </body>
 
 </html>
