@@ -5,16 +5,19 @@
     <style>
       body {
         margin: 0;
+        width: 750px;
+        height: 200px
       }
 
       div {
         width: 350px;
-        height: 400px;
-        display: block;
+        height: 200px;
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
       }
 
       .box {
-        display: inline-block;
         width: 100px;
         height: 100px;
         background-color: black;
@@ -29,25 +32,19 @@
         margin-left: 25px;
       }
 
-      .redbar {
+      .red {
         background-color: red;
-        height: 200px;
       }
 
-      .bluebar {
+      .blue {
         background-color: blue;
-        height: 200px
-      }
+        }
     </style>
   </head>
 
   <body>
-    <div class="redbar">
-      <div class="box left"></div><div class="box right"></div>
-    </div>
-    <div class="bluebar">
-      <div class="box left"></div><div class="box right"></div>
-    </div>
+    <div class="red"><div class="box left"></div><div class="box right"></div></div><div class="blue"><!--
+    --><div class="box left"></div><div class="box right"></div></div>
   </body>
 
 </html>
